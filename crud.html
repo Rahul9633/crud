@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crud Operation
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="box">
+
+        <input type="hidden" id="index">
+        <div class="group">
+            <label for="">Enter Book title</label>
+            <input type="text" id="title">
+        </div>
+        <div class="group">
+            <label for="">Enter Book Price</label>
+            <input type="number" id="price">
+        </div>
+        <div class="group">
+            <label for="">Enter Book Author</label>
+            <input type="text" id="author">
+        </div>
+        <div class="group">
+            <label for="">Enter Book Publication</label>
+            <input type="text" id="publish">
+        </div>
+
+
+        <div class="group">
+            <button id="btn-book" onclick="AddBook()">Add Book</button>
+            <button id='btn-update'>Update</button>
+            <!-- <button id='sort-name'>Sort Name</button> -->
+
+        </div>
+    </div>
+
+    <div class="srch" id="searchh">
+
+        <div class="group">
+            <label for="">Search Bar</label>
+            <input type="text" id="sch" placeholder="Search books by names" onkeyup="SearchBook()">
+        </div>
+        <p id="bookSch"></p>
+        <!-- <button id="btn-search" onclick="SearchBook()">Search</button> -->
+
+    </div>
+
+    <div class="container">
+
+        <table class="table" id="tbl">
+
+        </table>
+    </div>
+    <script src="/CRUD_USING_JS/js/books.js"></script>
+</body>
+
+</html>
